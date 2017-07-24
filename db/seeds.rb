@@ -5,20 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Picture.create(
+Product.create(
   name:  'Lego',
   description: 'Game',
-  price_in_cents:    '.99'
+  price_in_cents:    99
 )
 
-Picture.create(
+Product.create(
   name:  'Vase',
   description: 'Home Decor',
-  price_in_cents:    '.50'
+  price_in_cents:    50
 )
 
-Picture.create(
+Product.create(
   name:  'Shoes',
   description: 'Apparel',
-  price_in_cents:    '.49'
+  price_in_cents:    49
 )
