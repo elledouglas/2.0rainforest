@@ -1,5 +1,5 @@
 <h1> Add a new product </h1>
-<% form for @product do |f| %>
+<% form_for @products do |f| %>
 
 <div>
   <%= f.label :name %>
@@ -12,8 +12,8 @@
 </div>
 
 <div>
-  <%= f.label :price %>
-  <%= f.decimal :price %>
+  <%= f.label :price_in_cents %>
+  <%= f.text_field :price_in_cents %>
 </div>
 
 <div>
