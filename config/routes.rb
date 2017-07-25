@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :products
 
 
-# root 'products#index'
+ root 'products#index'
 get '/products' => 'products#index'
 #
 # post 'products' => 'products#create'
@@ -12,5 +12,5 @@ get '/products' => 'products#index'
  get 'products/:id/edit' => 'products#edit'
 patch 'products/:id' => 'products#update'
 #
-# get '/products/:id/' => 'product#show'
+ get '/products/:id/' => 'products#show'
 end
