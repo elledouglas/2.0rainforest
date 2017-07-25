@@ -1,3 +1,18 @@
-...on the homepage if I click a product I am taken to a page
-with b. its name, description, and price. a. two buttons:
-one to edit and the other to delete the product.
+<%= link_to "Back to Products", "/products" %>
+<p><%= link_to "Edit", "/products/#{@product.id}/edit" %></p>
+<p><%= link_to "Delete", "/products/#{@product.id}", method: :delete %></p>
+
+<p><%= @product.name %>, </p>
+<%=  @product.description %>
+<%= @product.price_in_cents %>
+
+<h2> Comments </h2>
+<ul>
+
+<% @product.comments.each do |comment| %>
+<li>
+
+<p> <%= comment.comment %> says:</p>
+  </li>
+<% end %>
+</ul>

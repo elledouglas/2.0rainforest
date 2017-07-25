@@ -13,4 +13,7 @@ get '/products' => 'products#index'
 patch 'products/:id' => 'products#update'
 #
  get '/products/:id/' => 'products#show'
+
+
+ delete 'products/:id' => 'products#destroy'
 end

@@ -7,11 +7,13 @@
 
     <% @products.each do |product| %>
 <li>
-  <%= product.name %>
+
+<%= product.name %>
 <%= product.description %>
 <%=  product.price_in_cents %>
+<%= link_to 'View', product_path(product) %>
 <%= link_to "Edit", "/products/#{product.id}/edit" %>
-<%= link_to "Delete", "/products/:id" %>
+<%= link_to "Delete", "/products/#{product.id}", method: :delete%>
 </li>
   <% end %>
 </ul>

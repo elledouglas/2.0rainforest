@@ -25,6 +25,9 @@ def edit
 end
 
 def show
+  @product = Product.find(params[:id])
+
+
 end
 
 def update
@@ -47,7 +50,7 @@ end
 def destroy
   @product = Product.find(params[:id])
   @product.destroy
-  redirect_to 'products'
+  redirect_to '/products'
 end
 
 end
